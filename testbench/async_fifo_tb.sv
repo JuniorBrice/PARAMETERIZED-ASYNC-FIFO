@@ -379,7 +379,7 @@ class environment;
     task post_test();
         wait(gen.done.triggered);  
         $display("---------------------------------------------");
-        $display("Error Count :%0d", sco.err);
+        $display("Potential Errors to Investigate : %0d", sco.err);
         $display("---------------------------------------------");
         $finish();
     endtask
