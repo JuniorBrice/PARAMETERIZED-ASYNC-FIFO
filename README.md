@@ -5,3 +5,4 @@ The testbench is very robust, and accounts for most read clock domain and write 
 To my knowledge, the FIFO is operating entirely correctly.
 
 ## BLOCK DIAGRAM AND VARIABLE DEFINITIONS
+![FIFO project diagram](https://github.com/JuniorBrice/PARAMETERIZED-ASYNC-FIFO/assets/79341423/73e9c6ea-5cf4-4c4c-a78e-d5ea3f5543f9)
