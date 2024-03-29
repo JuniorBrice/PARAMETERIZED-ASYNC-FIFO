@@ -6,3 +6,51 @@ To my knowledge, the FIFO is operating entirely correctly.
 
 ## BLOCK DIAGRAM AND VARIABLE DEFINITIONS
 ![FIFO project diagram](https://github.com/JuniorBrice/PARAMETERIZED-ASYNC-FIFO/assets/79341423/73e9c6ea-5cf4-4c4c-a78e-d5ea3f5543f9)
+
+### **--- ^In the diagram above^ ---**
+
+data_in : data being written into the FIFO, of a parameterized width
+
+data_out: data being read from the FIFO, of a parameterized width
+
+we : write enable
+
+re : read enable
+
+wclk : write domain clock
+
+rclk : read domain clock
+
+w_rstn : write domain negative reset
+
+r_rstn : read domain negative reset
+
+full : FIFO is full
+
+empty : FIFO is empty
+
+b_wptr : binary write pointer
+
+g_wptr : gray code write pointer
+
+g_wptr_s : gray code write pointer synched to read domain
+
+b_rptr : binary read pointer
+
+g_rptr : gray code read pointer
+
+g_rptr_s : gray code read pointer synched to write domain
+
+###**--- Others you will encounter in the design/testbench ---**
+
+b_wptr_next : binary write pointer next address
+
+g_wptr_next : gray code write pointer next address
+
+b_rptr_next : binary read pointer next address
+
+g_rptr_next : gray code read pointer next address
+
+b_rptr_s : binary read pointer synched to write domain
+
+b_wptr_s : binary write pointer synched to read domain
