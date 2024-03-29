@@ -1,0 +1,125 @@
+[DRV] : DUT Reset Complete
+-----------------------------------------------------------------------------------------
+[GEN] : Mode : 10, Iteration: 1
+[DRV] : Data written to fifo, Data : 48
+[MON] : we: 1, re: 0, data_in: 48, data_out: 0, h_full: 0, full: 0, empty: 1
+[SCO] : we: 1, re: 0, data_in: 48, data_out: 0, h_full: 0, full: 0, empty: 1
+[SCO] : DATA STORED IN QUEUE :48. (1 total entries)
+----------------------------------------------------------------------------
+[GEN] : Mode : 10, Iteration: 2
+[DRV] : Data written to fifo, Data : 217
+[MON] : we: 1, re: 0, data_in: 217, data_out: 48, h_full: 0, full: 0, empty: 0
+[SCO] : we: 1, re: 0, data_in: 217, data_out: 48, h_full: 0, full: 0, empty: 0
+[SCO] : DATA STORED IN QUEUE :217. (2 total entries)
+----------------------------------------------------------------------------
+[GEN] : Mode : 10, Iteration: 3
+[DRV] : Data written to fifo, Data : 215
+[MON] : we: 1, re: 0, data_in: 215, data_out: 48, h_full: 0, full: 0, empty: 0
+[SCO] : we: 1, re: 0, data_in: 215, data_out: 48, h_full: 0, full: 0, empty: 0
+[SCO] : DATA STORED IN QUEUE :215. (3 total entries)
+----------------------------------------------------------------------------
+[GEN] : Mode : 01, Iteration: 4
+[DRV] : Data read from fifo.
+[MON] : we: 0, re: 1, data_in: 215, data_out: 48, h_full: 0, full: 0, empty: 0
+[SCO] : we: 0, re: 1, data_in: 215, data_out: 48, h_full: 0, full: 0, empty: 0
+[SCO] : DATA MATCH. Data read from queue(2 entries remaining). Interface data: 48, queue data: 48
+----------------------------------------------------------------------------
+[GEN] : Mode : 10, Iteration: 5
+[DRV] : Data written to fifo, Data : 254
+[MON] : we: 1, re: 0, data_in: 254, data_out: 48, h_full: 0, full: 0, empty: 0
+[SCO] : we: 1, re: 0, data_in: 254, data_out: 48, h_full: 0, full: 0, empty: 0
+[SCO] : DATA STORED IN QUEUE :254. (3 total entries)
+----------------------------------------------------------------------------
+[GEN] : Mode : 10, Iteration: 6
+[DRV] : Data written to fifo, Data : 1
+[MON] : we: 1, re: 0, data_in: 1, data_out: 48, h_full: 0, full: 0, empty: 0
+[SCO] : we: 1, re: 0, data_in: 1, data_out: 48, h_full: 0, full: 0, empty: 0
+[SCO] : DATA STORED IN QUEUE :1. (4 total entries)
+----------------------------------------------------------------------------
+[GEN] : Mode : 10, Iteration: 7
+[DRV] : Data written to fifo, Data : 83
+[MON] : we: 1, re: 0, data_in: 83, data_out: 48, h_full: 0, full: 0, empty: 0
+[SCO] : we: 1, re: 0, data_in: 83, data_out: 48, h_full: 0, full: 0, empty: 0
+[SCO] : DATA STORED IN QUEUE :83. (5 total entries)
+----------------------------------------------------------------------------
+[GEN] : Mode : 10, Iteration: 8
+[DRV] : Data written to fifo, Data : 43
+[MON] : we: 1, re: 0, data_in: 43, data_out: 48, h_full: 0, full: 0, empty: 0
+[SCO] : we: 1, re: 0, data_in: 43, data_out: 48, h_full: 0, full: 0, empty: 0
+[SCO] : DATA STORED IN QUEUE :43. (6 total entries)
+----------------------------------------------------------------------------
+[GEN] : Mode : 10, Iteration: 9
+[DRV] : Data written to fifo, Data : 49
+[MON] : we: 1, re: 0, data_in: 49, data_out: 48, h_full: 1, full: 0, empty: 0
+[SCO] : we: 1, re: 0, data_in: 49, data_out: 48, h_full: 1, full: 0, empty: 0
+[SCO] : DATA STORED IN QUEUE :49. (7 total entries)
+----------------------------------------------------------------------------
+[GEN] : Mode : 10, Iteration: 10
+[DRV] : Data written to fifo, Data : 22
+[MON] : we: 1, re: 0, data_in: 22, data_out: 48, h_full: 1, full: 0, empty: 0
+[SCO] : we: 1, re: 0, data_in: 22, data_out: 48, h_full: 1, full: 0, empty: 0
+[SCO] : DATA STORED IN QUEUE :22. (8 total entries)
+----------------------------------------------------------------------------
+[GEN] : Mode : 10, Iteration: 11
+[DRV] : Data written to fifo, Data : 44
+[MON] : we: 1, re: 0, data_in: 44, data_out: 48, h_full: 1, full: 0, empty: 0
+[SCO] : we: 1, re: 0, data_in: 44, data_out: 48, h_full: 1, full: 0, empty: 0
+[SCO] : DATA STORED IN QUEUE :44. (9 total entries)
+----------------------------------------------------------------------------
+[GEN] : Mode : 10, Iteration: 12
+[DRV] : Data written to fifo, Data : 2
+[MON] : we: 1, re: 0, data_in: 2, data_out: 48, h_full: 1, full: 0, empty: 0
+[SCO] : we: 1, re: 0, data_in: 2, data_out: 48, h_full: 1, full: 0, empty: 0
+[SCO] : DATA STORED IN QUEUE :2. (10 total entries)
+----------------------------------------------------------------------------
+[GEN] : Mode : 10, Iteration: 13
+[DRV] : Data written to fifo, Data : 48
+[MON] : we: 1, re: 0, data_in: 48, data_out: 48, h_full: 1, full: 0, empty: 0
+[SCO] : we: 1, re: 0, data_in: 48, data_out: 48, h_full: 1, full: 0, empty: 0
+[SCO] : DATA STORED IN QUEUE :48. (11 total entries)
+----------------------------------------------------------------------------
+[GEN] : Mode : 01, Iteration: 14
+[DRV] : Data read from fifo.
+[MON] : we: 0, re: 1, data_in: 48, data_out: 217, h_full: 1, full: 0, empty: 0
+[SCO] : we: 0, re: 1, data_in: 48, data_out: 217, h_full: 1, full: 0, empty: 0
+[SCO] : DATA MATCH. Data read from queue(10 entries remaining). Interface data: 217, queue data: 217
+----------------------------------------------------------------------------
+[GEN] : Mode : 10, Iteration: 15
+[DRV] : Data written to fifo, Data : 45
+[MON] : we: 1, re: 0, data_in: 45, data_out: 217, h_full: 1, full: 0, empty: 0
+[SCO] : we: 1, re: 0, data_in: 45, data_out: 217, h_full: 1, full: 0, empty: 0
+[SCO] : DATA STORED IN QUEUE :45. (11 total entries)
+----------------------------------------------------------------------------
+[GEN] : Mode : 10, Iteration: 16
+[DRV] : Data written to fifo, Data : 86
+[MON] : we: 1, re: 0, data_in: 86, data_out: 217, h_full: 1, full: 0, empty: 0
+[SCO] : we: 1, re: 0, data_in: 86, data_out: 217, h_full: 1, full: 0, empty: 0
+[SCO] : DATA STORED IN QUEUE :86. (12 total entries)
+----------------------------------------------------------------------------
+[GEN] : Mode : 10, Iteration: 17
+[DRV] : Data written to fifo, Data : 91
+[MON] : we: 1, re: 0, data_in: 91, data_out: 217, h_full: 1, full: 0, empty: 0
+[SCO] : we: 1, re: 0, data_in: 91, data_out: 217, h_full: 1, full: 0, empty: 0
+[SCO] : DATA STORED IN QUEUE :91. (13 total entries)
+----------------------------------------------------------------------------
+[GEN] : Mode : 10, Iteration: 18
+[DRV] : Data written to fifo, Data : 95
+[MON] : we: 1, re: 0, data_in: 95, data_out: 217, h_full: 1, full: 0, empty: 0
+[SCO] : we: 1, re: 0, data_in: 95, data_out: 217, h_full: 1, full: 0, empty: 0
+[SCO] : DATA STORED IN QUEUE :95. (14 total entries)
+----------------------------------------------------------------------------
+[GEN] : Mode : 10, Iteration: 19
+[DRV] : Data written to fifo, Data : 130
+[MON] : we: 1, re: 0, data_in: 130, data_out: 217, h_full: 1, full: 0, empty: 0
+[SCO] : we: 1, re: 0, data_in: 130, data_out: 217, h_full: 1, full: 0, empty: 0
+[SCO] : DATA STORED IN QUEUE :130. (15 total entries)
+----------------------------------------------------------------------------
+[GEN] : Mode : 10, Iteration: 20
+[DRV] : Data written to fifo, Data : 94
+[MON] : we: 1, re: 0, data_in: 94, data_out: 217, h_full: 1, full: 1, empty: 0
+[SCO] : we: 1, re: 0, data_in: 94, data_out: 217, h_full: 1, full: 1, empty: 0
+[SCO] : FIFO is full
+----------------------------------------------------------------------------
+---------------------------------------------
+Potential Errors to Investigate : 0
+---------------------------------------------
