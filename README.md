@@ -1,7 +1,7 @@
 # PARAMETERIZED-ASYNC-FIFO
 A fully parameterized Asynchronous FIFO with a corresponding testbench, written in Verilog. The design is nearly full verified, but due to the nature of Asynchronous FIFOs and their extremely particular crossings, some transactions would have to either be verified by hand or modified into the current testbench. 
 
-The testbench is very robust, and accounts for most read clock domain and write clock domain differences. However, there are some scenarios and timings that be result in the testbench incorrectly flagging a FIFO error. As such, all errors reported by the testbench must be verified, and have been listed as "Potential Errors to Inestigate" in the console log after simulation.
+The testbench is very robust, and accounts for most read clock domain and write clock domain differences. However, there are some scenarios and timings that may result in the testbench incorrectly flagging a FIFO error. As such, all errors reported by the testbench must be verified, and have been listed as "Potential Errors to Inestigate" in the console log after simulation.
 
 After much testing, I believe the FIFO to be operating within specification.
 
@@ -12,11 +12,11 @@ After much testing, I believe the FIFO to be operating within specification.
 
 ### Fifo Memory
 
-Memory module (dual port memory) controlled by the read and write pointer control blocks, and is responsible for outputing data_out. The width and depth of this module can be customized in the top level module.
+Memory module (dual port circular memory) controlled by the read and write pointer control blocks, and is responsible for outputing data_out. The width and depth of this module can be customized in the top level module.
 
 ### Read and Write Pointer Controls
 
-Responsible for keeping track of where the read and write pointers are, and transferring that information to Fifo Memory in binary format. These two blocks also communicate with one another, and are constantly being updated with the other's current position. This is done by transmitting their current pointer locations to one another in gray code (as to avoid glitches), and synchronizing the information to their current clock domain. The location information is used by each to determine important varaibles like fifo_count (how many items are in the fifo), wrap_around (the fifo wrap around bit), h_full, full, and the empty flag. Each fifo is also equipped with its own gray to binary convertor.
+Responsible for keeping track of where the read and write pointers are, and transferring that information to Fifo Memory in binary format. These two blocks also communicate with one another, and are constantly being updated with the other's current position. This is done by transmitting their current pointer locations to one another in gray code (as to avoid glitches), and synchronizing that information to their current clock domain. The location information is used by each block to determine important varaibles like fifo_count (how many items are in the fifo), wrap_around (the fifo wrap around bit), h_full, full, and the empty flag. Each pointer control block is also equipped with its own gray to binary convertor.
 
 ### Synchronizers
 
@@ -92,7 +92,7 @@ Outputs are red, inputs are black.
 
 ### General Warning
 
-**Reminder:** Due to the nature of CDCs, building an accurate testbench from scratch was difficult. While I think it is very robust even when presented with peculiar scenarios, there is a chance any errors it detects may be due to the slight missing of a variable change or something of that nature. As such, all errors are listed as _Potenial Errors to be investigated_., and require further testing/probing to see if truly a malfunction.
+**Reminder:** Due to the nature of CDCs, building an accurate testbench from scratch was difficult. While I think it is very robust even when presented with peculiar scenarios, there is a chance any errors it detects may be due to the slight missing of a variable change or something of that nature. As such, all errors are listed as _Potenial Errors to be investigated_., and require further testing/probing to see if it is truly a malfunction.
 
 As the read and write clocks get farther and farther away from each other (giving the testbench time to catch all events), the more accurate the testbench becomes. In my experience **the FIFO is operating as intended**, and the testbench only trips up (may throw a false error) when the clock periods are within 5 ns (0.2 GHz) of one another but not equal, or when it runs into some other unforseen limitation. All investigations/inspections of waveforms concluded proper functionality! 
 
